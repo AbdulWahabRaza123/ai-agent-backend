@@ -1,8 +1,10 @@
-# 🧠 RAG-Based Chat Backend with Flask, LangChain, Gemini & FAISS
+# RAG-Based Chat Backend with Flask, LangChain, Gemini & FAISS
 
 This project is a lightweight Retrieval-Augmented Generation (RAG) API backend that supports AI chat with memory and a dynamic knowledge base. It is ideal for building intelligent assistants that can recall past sessions and incorporate domain-specific knowledge.
 
-## 🔧 Tech Stack
+---
+
+## Tech Stack
 
 - **Flask** — Lightweight Python web framework for handling API routes
 - **LangChain** — Enables session memory and orchestrates RAG logic
@@ -11,7 +13,7 @@ This project is a lightweight Retrieval-Augmented Generation (RAG) API backend t
 
 ---
 
-## 🔗 API Endpoints
+## API Endpoints
 
 ### `/chat` — RAG Chat Endpoint
 
@@ -27,7 +29,7 @@ This project is a lightweight Retrieval-Augmented Generation (RAG) API backend t
 
 ---
 
-## 🧠 Features
+## Features
 
 - **Session-Aware Conversations**: Memory is maintained per session for a personalized chat experience.
 - **Real-Time Knowledge Base Expansion**: Easily update the agent's knowledge via simple document uploads.
@@ -36,7 +38,7 @@ This project is a lightweight Retrieval-Augmented Generation (RAG) API backend t
 
 ---
 
-## 🗂️ Project Structure Overview
+## Project Structure Overview
 
 - `app.py`: Main Flask server and route handler
 - `main.py`: Core RAG chat logic
@@ -46,7 +48,28 @@ This project is a lightweight Retrieval-Augmented Generation (RAG) API backend t
 
 ---
 
-## 🚫 Deployment Notes
+## 💻 Local Setup Instructions
+
+### Python Version
+
+- This project uses **Python 3.11.2**. Please ensure it is installed before proceeding.
+
+### Setup Steps
+
+1. Create and activate a virtual environment:
+
+   - Use tools like `venv` or `virtualenv` to isolate dependencies.
+
+2. Install all required dependencies:
+
+   - All packages are listed in `requirements.txt`.
+
+3. Run the Flask application:
+   - Start the server and begin interacting with the endpoints.
+
+---
+
+## Deployment Notes
 
 This backend relies on FAISS, which requires a writable file system. As a result, platforms with ephemeral or read-only storage (such as Vercel) are **not suitable**.
 
@@ -83,8 +106,4 @@ The `/upload` endpoint is intended for internal or admin use only. You should se
 
 ## License
 
-This project is licensed under the MIT License.
-
----
-
-**Built with care using Flask, LangChain, Gemini, and FAISS**
+## This project is licensed under the **MIT License**.
